@@ -787,7 +787,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:6.7.5":
+"@typescript-eslint/utils@npm:6.7.5, @typescript-eslint/utils@npm:^6.7.5":
   version: 6.7.5
   resolution: "@typescript-eslint/utils@npm:6.7.5"
   dependencies:
@@ -1355,6 +1355,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-perfectionist@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "eslint-plugin-perfectionist@npm:2.2.0"
+  dependencies:
+    "@typescript-eslint/utils": ^6.7.5
+    minimatch: ^9.0.3
+    natural-compare-lite: ^1.4.0
+  peerDependencies:
+    astro-eslint-parser: ^0.16.0
+    eslint: ">=8.0.0"
+    svelte: ">=3.0.0"
+    svelte-eslint-parser: ^0.33.0
+    vue-eslint-parser: ">=9.0.0"
+  peerDependenciesMeta:
+    astro-eslint-parser:
+      optional: true
+    svelte:
+      optional: true
+    svelte-eslint-parser:
+      optional: true
+    vue-eslint-parser:
+      optional: true
+  checksum: 1f51d132e098dbadd5b6f881f2f78f98099d1b034f0c40f6e0aa0f609ff5c60761699b721f2c0cd6be9d2749ffebfaa16c235b20ef79404f790d1acd7677b9de
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-react-hooks@npm:^4.6.0":
   version: 4.6.0
   resolution: "eslint-plugin-react-hooks@npm:4.6.0"
@@ -1370,6 +1396,28 @@ __metadata:
   peerDependencies:
     eslint: ">=7"
   checksum: 0332c950bb46c3058fd06acb1dbdc3ea0af05238645f4c0f575e0e367440dc56afb928f855833d321b9e8109e08c63d5f476cc55d507f883a80c289bfcd509cb
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-unused-imports@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "eslint-plugin-unused-imports@npm:3.0.0"
+  dependencies:
+    eslint-rule-composer: ^0.3.0
+  peerDependencies:
+    "@typescript-eslint/eslint-plugin": ^6.0.0
+    eslint: ^8.0.0
+  peerDependenciesMeta:
+    "@typescript-eslint/eslint-plugin":
+      optional: true
+  checksum: 51666f62cc8dccba2895ced83f3c1e0b78b68c357e17360e156c4db548bfdeda34cbd8725192fb4903f22d5069400fb22ded6039631df01ee82fd618dc307247
+  languageName: node
+  linkType: hard
+
+"eslint-rule-composer@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "eslint-rule-composer@npm:0.3.0"
+  checksum: c2f57cded8d1c8f82483e0ce28861214347e24fd79fd4144667974cd334d718f4ba05080aaef2399e3bbe36f7d6632865110227e6b176ed6daa2d676df9281b1
   languageName: node
   linkType: hard
 
@@ -2114,7 +2162,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^9.0.1":
+"minimatch@npm:^9.0.1, minimatch@npm:^9.0.3":
   version: 9.0.3
   resolution: "minimatch@npm:9.0.3"
   dependencies:
@@ -2236,6 +2284,13 @@ __metadata:
   bin:
     nanoid: bin/nanoid.cjs
   checksum: 7d0eda657002738aa5206107bd0580aead6c95c460ef1bdd0b1a87a9c7ae6277ac2e9b945306aaa5b32c6dcb7feaf462d0f552e7f8b5718abfc6ead5c94a71b3
+  languageName: node
+  linkType: hard
+
+"natural-compare-lite@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "natural-compare-lite@npm:1.4.0"
+  checksum: 5222ac3986a2b78dd6069ac62cbb52a7bf8ffc90d972ab76dfe7b01892485d229530ed20d0c62e79a6b363a663b273db3bde195a1358ce9e5f779d4453887225
   languageName: node
   linkType: hard
 
@@ -2803,8 +2858,10 @@ __metadata:
     "@typescript-eslint/parser": ^6.0.0
     "@vitejs/plugin-react": ^4.0.3
     eslint: ^8.45.0
+    eslint-plugin-perfectionist: ^2.2.0
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-react-refresh: ^0.4.3
+    eslint-plugin-unused-imports: ^3.0.0
     react: ^18.2.0
     react-dom: ^18.2.0
     todomvc-app-css: ^2.4.2
