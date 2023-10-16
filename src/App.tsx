@@ -63,7 +63,7 @@ function App() {
         </p>
         {/* Change this out with your name and url ↓ */}
         <p>
-          Created by <a href="http://todomvc.com">you</a>
+          Created by <a href="https://github.com/taeyoungs">taeyoungs</a>
         </p>
         <p>
           Part of <a href="http://todomvc.com">TodoMVC</a>
